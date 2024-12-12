@@ -92,6 +92,17 @@ table(ses_loc$SES_median, ses_loc$SES_mode)
 setwd("~/Rabies SES/")
 saveRDS(ses_loc, "data/AQPSESlocalities_4.8.2024.rds")
 
+# Add locality centroids
+loc_centroid <- st_centroid(ses_loc) %>% # get locality centroids
+  mutate(geom = gsub(geometry,pattern="(\\))|(\\()|c",replacement = ""))%>%
+  tidyr::separate(geom,into=c("lon","lat"),sep=",")%>%
+  st_as_sf(.,coords=c("lon","lat"),crs=st_crs(locs)) %>%
+  select(PDL, lon, lat) %>%
+  st_drop_geometry
+# - Merge locality centroids with samples
+samps_centroid <- left_join(samps, loc_centroid)
+write_csv(samps_centroid, "data/AQPsamples_centroids_6.24.24.csv")
+
 ##-----------------------------------------------------------------------------
 # 3. Map blocks and localities shaded according to SES
 ##-----------------------------------------------------------------------------
