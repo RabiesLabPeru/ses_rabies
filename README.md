@@ -13,4 +13,10 @@ Scripts used in the analysis can be found in the **scripts** folder. A descripti
 
 # Data files
 Non-sensitive data used in the analysis can be found in the **data** folder. Note that rabies case locations, which included many residential addresses, were removed to protect the privacy of local residents.
-* **AQP 
+* **AQPSESblocks.rds** - block polygons with SES
+* **AQPSESlocalities.rds** - locality polygons with SES
+* **AQPsamples_SES.rds** - samples with test result and locality-level SES assignment
+* **AQPsamples_centroids.csv** - samples with locality centroids
+* **AQPsamples_active.rds** - samples filtered for those collected via active surveillance
+* **AQPsamples_passive.rds** - samples filtered for those collected via passive surveillance
+* **healthfaciliites.rds** - the locations of health facilities
