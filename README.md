@@ -12,11 +12,11 @@ Scripts used in the analysis can be found in the **scripts** folder. A descripti
 * **dataprep_disttofacilities.R** - calculate Euclidean distance between locality centroids associated with each sample and the closest health facility
 
 ## Statistical analysis scripts
-* **stat_cochranarmitage.R** -
-* **stat_cochranarmitage_passiveonly.R** - 
-* **stat_chisquared.R** - 
-* **stat_cohenskappa.R** - 
-* **mapgam_samplepositivity.R** - 
+* **stat_cochranarmitage.R** - run Cochran-Armitage tests to test for trend between locality-level SES and sample positivity
+* **stat_cochranarmitage_passiveonly.R** - same as above but run on passive samples only
+* **stat_chisquared.R** - perform chi-squared tests to compare SES distributions between cases and houses and between samples collected via active vs. passive surveillance
+* **stat_cohenskappa.R** - calculate cohen's kappa to assess agreement between block and locality SES
+* **mapgam_samplepositivity.R** - fit crude and adjusted spatial GAMs to find the spatial OR of sample positivity
 
 ## Mapping and plotting scripts
 * **map_rabiescases_districts.R** -
