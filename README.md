@@ -6,10 +6,28 @@ This repository contains scripts used in the analysis presented in the manuscrip
 Scripts used in the analysis can be found in the **scripts** folder. A description of each script file can be found below.
 
 ## Data cleaning scripts
+* **dataprep_SEScases.R** - assign SES to cases based on block SES
+* **dataprep_SESlocalities.R** - determine locality-level SES as the median SES of blocks falling within each locality
+* **dataprep_disttofacilities.R** - assign SES to samples based on locality-level SES
+* **dataprep_disttofacilities.R** - calculate Euclidean distance between locality centroids associated with each sample and the closest health facility
 
 ## Statistical analysis scripts
+* **stat_cochranarmitage.R** -
+* **stat_cochranarmitage_passiveonly.R** - 
+* **stat_chisquared.R** - 
+* **stat_cohenskappa.R** - 
+* **mapgam_samplepositivity.R** - 
 
 ## Mapping and plotting scripts
+* **map_rabiescases_districts.R** -
+* **map_rabiessamples.R** - 
+* **map_sesblocksandhealthfacilities.R** - 
+* **plot_rabiescasesandsamples.R** - 
+* **plot_rabiescasesandsamples_passiveonly.R** -
+* **plot_samplepositivityandSES.R** - 
+* **plot_samplepositivityandSES_passiveonly.R** -
+* **stackedrowcharts_SESdistributions.R** -
+
 
 # Data files
 Non-sensitive data used in the analysis can be found in the **data** folder. Note that rabies case locations, which included many residential addresses, were removed to protect the privacy of local residents.
