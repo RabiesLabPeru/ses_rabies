@@ -16,17 +16,18 @@ Scripts used in the analysis can be found in the **scripts** folder. A descripti
 * **stat_cochranarmitage_passiveonly.R** - same as above but run on passive samples only
 * **stat_chisquared.R** - perform chi-squared tests to compare SES distributions between cases and houses and between samples collected via active vs. passive surveillance
 * **stat_cohenskappa.R** - calculate cohen's kappa to assess agreement between block and locality SES
-* **mapgam_samplepositivity.R** - fit crude and adjusted spatial GAMs to find the spatial OR of sample positivity
-
+* **mapgam_samplepositivity.R** - fit crude and adjusted spatial GAMs to find the spatial OR of sample positivity; also map spatial OR's obtained from the crude and adjusted models
+* 
 ## Mapping and plotting scripts
-* **map_rabiescases_districts.R** -
-* **map_rabiessamples.R** - 
-* **map_sesblocksandhealthfacilities.R** - 
-* **plot_rabiescasesandsamples.R** - 
-* **plot_rabiescasesandsamples_passiveonly.R** -
-* **plot_samplepositivityandSES.R** - 
-* **plot_samplepositivityandSES_passiveonly.R** -
-* **stackedrowcharts_SESdistributions.R** -
+*Note maps and plots were additionally edited and formatted using Powerpoint*
+* **map_rabiescases_districts.R** - map jittered locations of rabies cases and district boundaries (Fig 1)
+* **map_rabiessamples.R** - create a choropleth map of sample submission volume by locality (Fig 1)
+* **map_sesblocksandhealthfacilities.R** - map blocks shaded according to SES and the locations of health facilities (Fig 1)
+* **plot_rabiescasesandsamples.R** - plot temporal trends in the number of cases and samples by SES (Fig 2)
+* **plot_rabiescasesandsamples_passiveonly.R** - same as above but exclude active samples (SFig S3)
+* **plot_samplepositivityandSES.R** - plot sample positivity vs. SES (Fig 3)
+* **plot_samplepositivityandSES_passiveonly.R** - same as above but exclude active samples (SFig S4)
+* **stackedrowcharts_SESdistributions.R** - create stacked row charts illustrating differences in the SES distributions of cases vs. houses (SFig S1)
 
 
 # Data files
