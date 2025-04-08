@@ -1,6 +1,5 @@
-# Neighborhood Socioeconomic Status and Dog-Mediated Rabies: Disparities in Incidence and Surveillance Effort in a Latin American City
-
-This repository contains scripts used in the analysis presented in the manuscript titled _Neighborhood Socioeconomic Status and Dog-Mediated Rabies: Disparities in Incidence and Surveillance Effort in a Latin American City_. A description of the repository's contents are provided below.
+# Socioeconomic Disparities and Dog Rabies: A Retrospective Analysis of High-Spatial- Resolution Surveillance Data from a Latin American City
+This repository contains scripts used in the analysis presented in the manuscript titled _Socioeconomic Disparities and Dog Rabies: A Retrospective Analysis of High-Spatial-Resolution Surveillance Data from a Latin American City_. A description of the repository's contents are provided below.
 
 # Script files
 Scripts used in the analysis can be found in the **scripts** folder. A description of each script file can be found below.
